@@ -5,7 +5,7 @@
   "description": "Storybook documentation for CarbonForge UI.",
   "scripts": {
     "storybook": "storybook dev",
-    "build:storybook": "STORYBOOK_DISABLE_TELEMETRY=1 storybook build",
+    "build:storybook": "STORYBOOK_DISABLE_TELEMETRY=1 storybook build -o storybook-static",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
