@@ -1,0 +1,35 @@
+{
+  "name": "@carbonforge/docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Storybook documentation for CarbonForge UI.",
+  "scripts": {
+    "storybook": "storybook dev",
+    "build:storybook": "STORYBOOK_DISABLE_TELEMETRY=1 storybook build",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests",
+    "build": "npm run build:storybook"
+  },
+  "dependencies": {
+    "@carbonforge/ui": "0.1.0",
+    "@carbon/react": "^1.110.0",
+    "@carbon/icons-react": "^11.60.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@types/node": "^22.10.7",
+    "@vitejs/plugin-react": "^4.3.4",
+    "storybook": "^8.4.7",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

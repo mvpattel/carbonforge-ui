@@ -1,0 +1,32 @@
+{
+  "name": "carbonforge-ui-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CarbonForge UI is an enterprise React pattern library built on IBM Carbon Design System.",
+  "author": "Mitul Patel <mvpattel@gmail.com>",
+  "license": "MIT",
+  "packageManager": "npm@10.7.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "storybook": "npm run storybook -w @carbonforge/docs",
+    "build:storybook": "npm run build:storybook -w @carbonforge/docs",
+    "changeset": "changeset"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,37 @@
+.cfg-empty-state {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px dashed var(--cds-border-subtle-01, #c6c6c6);
+  background: var(--cds-layer-01, #f4f4f4);
+}
+
+.cfg-empty-state__icon {
+  color: var(--cds-icon-secondary, #525252);
+}
+
+.cfg-empty-state__copy {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cfg-empty-state__title {
+  margin: 0;
+  color: var(--cds-text-primary, #161616);
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.cfg-empty-state__description {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--cds-text-secondary, #525252);
+  line-height: 1.5;
+}
+
+.cfg-empty-state__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
